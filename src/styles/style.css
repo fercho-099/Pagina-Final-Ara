@@ -1,0 +1,16 @@
+.ComprarOvender {
+    
+    background-color: #f5f4f4;
+    color: #ff991b;
+    border-radius: 35px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    
+    
+}
+
+.ComprarOvender:hover {
+  background-color: #000000;
+  color: #f79620;  
+}

@@ -1,0 +1,13 @@
+CONCEPTO DE ESTADO
+
+Explica cada estado de la pagina cuando borro y modifico el jsx https://youtu.be/MZkv-JMBCNg?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=1035
+es.havascrip.info una web para https://youtu.be/MZkv-JMBCNg?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=1901
+
+
+es.react.dev todo se puede aprender de esa pagina, todo sobre react
+
+Manejador de evento, onchange es la palabra clave para detectar un cambio https://youtu.be/MZkv-JMBCNg?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=2767
+    Creo tambien que es importante que usar la variable "e(e de evento-puede ser onclick, onchange, onsubmit u otro)"  y el operador arrow "=>" y "target value"   https://youtu.be/MZkv-JMBCNg?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=4130
+
+crea un objeto para enviar https://youtu.be/MZkv-JMBCNg?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=4710  
+    Utilizacion de spread operator

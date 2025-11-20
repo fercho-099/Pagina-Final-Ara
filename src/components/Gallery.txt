@@ -1,0 +1,33 @@
+import React from 'react';   
+ 
+function Gallery() {   
+    const images = [   
+        "https://www.segutecnica.com/thumb/000000000001903726147husqvarna-cortacerco-520i-hd60x-7915602-segutecnica_400x400.png", 
+        "https://cdn.rumbosrl.com.ar/uploads/products/images/large/5702690.png",   
+        "https://www.segutecnica.com/thumb/000000000001903422038husqvarna-bordeadora-115il-7098801-segutecnica_400x400.png"   
+    ];   
+ 
+    return (   
+        <section style={{ 
+            display: "flex",
+            gap: "10px",
+            justifyContent: "center",
+            marginTop: "20px" }}
+        >   
+
+            {images.map((src, index) => (   
+                <img 
+                key={index}
+                src={src} 
+                alt={`Imagen ${index + 1}`} 
+                style={{ 
+                    width: "150px", 
+                    height: "150px" 
+                }}
+            />   
+        ))}   
+        </section>   
+    );   
+}   
+ 
+export default Gallery;   
