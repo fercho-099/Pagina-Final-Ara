@@ -14,3 +14,17 @@
   background-color: #000000;
   color: #f79620;  
 }
+
+.Nav-container{
+
+  background-Color: "#333"; 
+  color: "white"; 
+  padding: "10px";
+}
+
+.Ul-container{
+    list-Style: "none";
+    display: "flex";
+    justify-Content: "space-around";
+    margin: 0;
+}
