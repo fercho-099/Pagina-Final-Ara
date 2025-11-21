@@ -11,30 +11,30 @@ function Nav() {
 
     return (   
         <nav className="Nav-container">   
-            <ul className="Ul-container">   
-                <li className="nav-item">
-                    <a href="#" onClick={toggleDropdown} style={{ color: "white", textDecoration: "none" }}>Inicio</a>
-                    <div className="dropdown">
-                        <button className="btn Inicio">
-                            <ul className={`dropdown-menu ${isDropdownOpen ? 'open' : ''}`}>
-                                <li>
+            
+                    <div className="dropdown-Inicio">
+                        <button className="btn-Inicio"> Inicio</button>
+                        <div className="drop-content-inicio">                            
+                               
                                     <a href="#Link1" className="dropdown-link">Construccion</a>
-                                </li>
-                                <li>
+                                
                                     <a href="#Link2" className="dropdown-link"> Jardineria</a>
-                                </li>
-                                <li>
+                                
                                     <a href="#Link3" className="dropdown-link">Hogar</a>
-                                </li>
-                            </ul>
-                        </button>
+                               
+                        </div>
                     </div>
-                <li className="li-item">
-                    <a href="#" onClick={toggleDropdown}  style={{ color: "white", textDecoration: "none" }}>Acerca de Ara Maquinarias</a></li>  
-                <li className="li-item">
-                    <a href="#" onClick={toggleDropdown}  style={{ color: "white", textDecoration: "none" }}>Contacto</a></li>   
-            </li>
-            </ul>   
+                <div className="drop-acercaAra">
+                    <button className="btn-Acerca-ara">
+                        <a href="#" onClick={toggleDropdown}  style={{ color: "white", textDecoration: "none" }}>Acerca de Ara Maquinarias</a>
+                    </button>
+                </div>  
+                <div className="drop-Contacto">
+                    <button className="btn-Contacto">
+                    <a href="#" onClick={toggleDropdown}  style={{ color: "white", textDecoration: "none" }}>Contacto</a>
+                    </button>
+                </div> 
+           
         </nav>   
     );  
                      

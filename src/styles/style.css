@@ -1,3 +1,4 @@
+/* ------- ListaProductosJardineria   tarjeta ------- */
 .ComprarOvender {
     
     background-color: #f5f4f4;
@@ -15,16 +16,78 @@
   color: #f79620;  
 }
 
+/* ------- NAV ------- */
 .Nav-container{
 
-  background-Color: "#333"; 
-  color: "white"; 
+  background-color: #333; 
+  color: #f0f0f0; 
   padding: "10px";
+  display: flex;
 }
 
-.Ul-container{
-    list-Style: "none";
-    display: "flex";
-    justify-Content: "space-around";
-    margin: 0;
+/*  DIV INICIO */
+
+.dropdown-inicio{
+  position: relative;
+  display: inline-block;
+}
+
+.btn-Inicio{
+
+  background-color: #f79620;
+  color: #000000;
+  display: flex;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.drop-content-inicio{
+
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+.drop-content-inicio a{
+
+  color: #000000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.drop-content-inicio a:hover{
+  background-color: #ddd;
+}
+
+.drop-content-inicio:hover .drop-content-Inicio {
+  display: block;
+}
+ /* DIV ACERCA ARA */
+.btn-Acerca-ara{
+
+  background-color: #f79620;
+  color: #000000;
+  display: flex;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+/* DIV CONTACTO */
+.btn-Contacto{
+
+  background-color: #f79620;
+  color: #000000;
+  display: flex;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 16px;
+  cursor: pointer;
 }
