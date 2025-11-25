@@ -69,7 +69,35 @@
   display: block;
 }
  /* DIV ACERCA ARA */
-.btn-Acerca-ara{
+.btn-Construccion{
+
+  background-color: #f79620;
+  color: #000000;
+  display: flex;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+
+.btn-Construccion{
+
+  background-color: #f79620;
+  color: #000000;
+  display: flex;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.drop-Hogar{
+  position: relative;
+  display: inline-block;
+}
+
+.btn-Hogar{
 
   background-color: #f79620;
   color: #000000;
@@ -81,7 +109,7 @@
 }
 
 /* DIV CONTACTO */
-.btn-Contacto{
+.btn-Jardineria{
 
   background-color: #f79620;
   color: #000000;
@@ -90,4 +118,5 @@
   font-size: 16px;
   border-radius: 16px;
   cursor: pointer;
+  text-decoration: none;
 }

@@ -16,22 +16,27 @@ function Nav() {
                         <button className="btn-Inicio"> Inicio</button>
                         <div className="drop-content-inicio">                            
                                
-                                    <a href="#Link1" className="dropdown-link">Construccion</a>
+                                    <a href="Construccion" onClick={toggleDropdown} className="dropdown-link">Construccion</a>
                                 
-                                    <a href="#Link2" className="dropdown-link"> Jardineria</a>
+                                    <a href="Jardineria" className="dropdown-link"> Jardineria</a>
                                 
-                                    <a href="#Link3" className="dropdown-link">Hogar</a>
+                                    <a href="Hogar" className="dropdown-link">Hogar</a>
                                
                         </div>
                     </div>
-                <div className="drop-acercaAra">
-                    <button className="btn-Acerca-ara">
-                        <a href="#" onClick={toggleDropdown}  style={{ color: "white", textDecoration: "none" }}>Acerca de Ara Maquinarias</a>
+                <div className="drop-Construccion">
+                    <button className="btn-Construccion">
+                        <a href="Construccion" onClick={toggleDropdown}>Construccion</a>
                     </button>
                 </div>  
-                <div className="drop-Contacto">
-                    <button className="btn-Contacto">
-                    <a href="#" onClick={toggleDropdown}  style={{ color: "white", textDecoration: "none" }}>Contacto</a>
+                <div className="drop-Jardineria">
+                    <button className="btn-Jardineria">
+                    <a href="Jardineria" onClick={toggleDropdown}>Jardineria</a>
+                    </button>
+                </div> 
+                <div className="drop-Hogar">
+                    <button className="btn-Hogar">
+                    <a href="Hogar" onClick={toggleDropdown}>Hogar</a>
                     </button>
                 </div> 
            
