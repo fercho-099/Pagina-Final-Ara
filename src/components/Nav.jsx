@@ -12,16 +12,14 @@ function Nav() {
     return (   
         <nav className="Nav-container">   
             
-                    <div className="dropdown-Inicio">
-                        <button className="btn-Inicio"> Inicio</button>
-                        <div className="drop-content-inicio">                            
-                               
+                    <div className="drop-Inicio" >
+                        <button className="btn-Inicio" onClick={toggleDropdown}> Inicio</button>
+                        <div className="drop-content-inicio" style={{ display: isDropdownOpen ? 'block' : 'none' }}>                            
                                     <a href="Construccion" onClick={toggleDropdown} className="dropdown-link">Construccion</a>
                                 
                                     <a href="Jardineria" className="dropdown-link"> Jardineria</a>
                                 
                                     <a href="Hogar" className="dropdown-link">Hogar</a>
-                               
                         </div>
                     </div>
                 <div className="drop-Construccion">
@@ -39,10 +37,7 @@ function Nav() {
                     <a href="Hogar" onClick={toggleDropdown}>Hogar</a>
                     </button>
                 </div> 
-           
         </nav>   
     );  
-                     
 }   
- 
 export default Nav;   
