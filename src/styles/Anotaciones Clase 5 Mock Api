@@ -1,0 +1,39 @@
+https://youtu.be/RBFlZvm4EHk?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u
+
+¿Que es un operador ternario?  https://youtu.be/RBFlZvm4EHk?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=698
+    Una manera de escribir un condicional pero de una manera distinta.
+
+El operador ternario si devuelve https://youtu.be/RBFlZvm4EHk?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=937 devuelve un producto final. Sirve para el renderizado.
+    Mezcla el archivo jsx con javascript. https://youtu.be/RBFlZvm4EHk?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=984
+    Renderiza el carrito vacio si no hay productos y si no, renderiza el carrito con los productos.
+
+
+Nuevo tipo de Hook https://youtu.be/RBFlZvm4EHk?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=1576
+    Use efecct y peticiones api (dos tipos de hook)
+    Se debe cumplir con los tres pasos: el montaje, la actualizacion del componente y la limpueza del componente
+    La manera de limpiar los useEffect https://youtu.be/RBFlZvm4EHk?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=2615 que se da a voluntad de lo que fuese, si es una api, temporizador, websocket.
+    Que pasa si copia el click y lo pone dentro de la dependencia "corchetes" https://youtu.be/RBFlZvm4EHk?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=2785
+        Ejecuta la limpieza en cada renderizado. Cuando uno scrolea en las aplicaciones, lo que esta fuera de la pantalla, ya se ejecuta la limpieza. Si no seria imposible sostener todo en memoria ram.
+    
+        Montaje o desmontaje de un componente https://youtu.be/RBFlZvm4EHk?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=2866
+        Evita renderizar cuando apreta el boton. 
+
+Peticiones API https://youtu.be/RBFlZvm4EHk?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=3847
+    Construir una fake api https://youtu.be/RBFlZvm4EHk?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=4809 desde mock API
+    
+    
+
+Además, añado las direcciones web donde se pueden encontrar distintos "dataset" de organismos oficiales, dado que al final de la clase, surgió este tema de conversación y varios intercambiaron esta info por el chat:
+ 
+https://data.buenosaires.gob.ar/
+https://datos.gob.ar/
+https://datosgobar.github.io/datosgobar-landing-apis/
+https://buenosaires.gob.ar/agendadetransparencia/datos-abiertos
+https://www.bcra.gob.ar/Noticias/Datos_abiertos_sitio_web_BCRA.asp
+
+Nota del portal Educación de Buenos Aires sobre el futuro del trabajo:
+https://buenosaires.gob.ar/educacion/agencia-de-habilidades-para-el-futuro/el-futuro-del-trabajo-aprendizajes-post-pandemia-y
+
+
+AFTER
+    Concepto de children https://youtu.be/n5y_vReqmmA?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=1232
