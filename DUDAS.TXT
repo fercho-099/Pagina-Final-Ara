@@ -1,0 +1,51 @@
+DESDE CLASE 3 ¿QUE ES CHILDREN? Es una prop especial que react crea automaticamente. Es Contenido interno de un componente. 
+Permite crear componentes reutilizables y flexibles. Por ejemplo: botones reutilizables y flexibles,
+    Layouts, tarjetas.
+    Un ejemplo de Children es h1 y p en el siguiente codigo:
+    
+<Titulo>
+  <h1>Hola</h1>
+  <p>Subtítulo</p>
+</Titulo>
+
+El codigo para declarar realmente un children seria el siguiente:
+
+
+function Card({ children }) {
+  return (
+    <div style={{ border: "1px solid #ccc", padding: "16px" }}>
+      {children}
+    </div>
+  );
+}
+
+
+<Card>
+  <h2>Título</h2>
+  <p>Descripción</p>
+</Card>
+
+La palabra children debe ir si o si en fuction Card({children}) y lo que contiene esta declaracion de codigo es que se le puede dar una personalizacion
+    a todo lo que tiene adentro.
+
+----------------------------------------------------------------------
+
+¿Que es DOM VIRTUAL ? Es una copia ligera del DOM Real, creada y mantenida por React en memoria (java script)
+    Es un arbol de objetos de JavaScript.
+    Es mucho mas rapido por que calcula los cambios necesarios.
+    Trabaja mediante el proceso RECONCILIATION donde se compara el DOM Real con el DOM Virtual y aquellos props (-nodos-objetos del arbol de javascript) son actualizado en el DOM Real.
+    No renderiza toda la pagina solo los nodos.
+--------------------------------------------------------------
+
+INSTALAR PROPIEDADES DE REACT PARA VER LOS COMPONENTER DESDE EL CHROME https://youtu.be/QJCHH3gijjk?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=733
+
+conviene poner tu marca personal al fondo de un sitio web que vas a vender ? https://youtu.be/QJCHH3gijjk?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=5448
+
+Buscar el tema fake token, ¿ para que sirve?
+
+¿section en bootstrap para que sirve? ademas de agregarle semantica
+
+formspreee https://youtu.be/qhLC9jVhzmA?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=5618
+    Sire para tener operativo el landyscape formspree que es un formulario <form>  luego de enviar un formulario, me manda un mensaje al correo de alguien que lleno ese formulario.
+
+re ver la diferencia entre netlify y vercel como servidor para ¿alojar la web?

@@ -16,6 +16,11 @@
   color: #f79620;  
 }
 
+.interes-boton:hover{
+background-color: #ef8009ff;
+color: white;
+}
+
 /* ------- NAV ------- */
 .Nav-container{
 

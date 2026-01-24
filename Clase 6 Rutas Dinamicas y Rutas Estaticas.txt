@@ -1,0 +1,46 @@
+https://youtu.be/-e1D6YlIYp8?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u
+
+bootcamp mercado libre
+    Enlace a la nota sobre el Bootcamp de Mercado Libre:
+    https://medium.com/mercadolibre-tech/it-bootcamp-front-end-web-6f42a82a5528
+    https://careers-meli.mercadolibre.com/es/life-at-meli
+
+El proceso del react es renderizar componentes no paginas. Se vuelve mas pesdado a que si renderizamos solamente componentes.
+
+Se crea inicioo.jsx https://youtu.be/-e1D6YlIYp8?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=2192
+    Se crea un RFCE- Nos trae un componente reactivo, un componente con el nombre que definimos el JSX. En este caso INICIO.JSX 
+
+Como reemplazo la etiqueta "A ref" de pagina web https://youtu.be/-e1D6YlIYp8?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=2417
+
+REACT ROUTER reemplaza navegacion por paginas para imponer navegacion por componentes. https://youtu.be/-e1D6YlIYp8?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=2741
+    Para navegar entre componente debo usar routes. https://youtu.be/-e1D6YlIYp8?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=2892
+    dentro de routes, tenemos el pad que contenga el componente que vamos a usar
+
+El pad raiz es la pagina principal https://youtu.be/-e1D6YlIYp8?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=2981
+    El pad se refiere al link que hace referencia la pagina sea cual sea, en el cas de arriba el de pagina principal
+
+Crear un boton para volver al inicio https://youtu.be/-e1D6YlIYp8?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=4081
+
+renderizado condicional cuado no se carga un producto, se carga una pagina de error https://youtu.be/-e1D6YlIYp8?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=4344
+    Se ve claramente como carga "cargando productos" y luego aparecen los productos https://youtu.be/-e1D6YlIYp8?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=4490
+
+RUTAS DINAMICAS https://youtu.be/-e1D6YlIYp8?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=4911
+    El pad se ajusta por componente no por pagina
+    porcion dinamica y state  https://youtu.be/-e1D6YlIYp8?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=5255
+
+USE PARAMS https://youtu.be/-e1D6YlIYp8?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=5497
+    Captura el id como elemento dinamico
+    uselocation, captura el statek
+
+AFTER CLASS
+
+Como pusar el mockapi si hayun errorhttps://youtu.be/8wlSdPjEMdw?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=1174
+Como instalar git https://youtu.be/8wlSdPjEMdw?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=1870
+Para instalar los modulos de react en un proyecto cuando manipulamos el proyecto desde git de visual studio code  https://youtu.be/8wlSdPjEMdw?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=2102
+
+FUNCION PARA PODER GESTIONAR EL EVENTO CLICK QUE YO LE DE AL PRODUCTO CUANDO YO LE DE A COMPRAR https://youtu.be/8wlSdPjEMdw?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=3065
+    Establece la modificacion, que el carrito en principio esta vacio y luego trae el producto con spreed operator lo agrega al carrito.
+
+    Explica paso a paso como agregar a la lista carrito el producto https://youtu.be/8wlSdPjEMdw?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=3276
+        Tambien recuerda que si una funcion devuelve mas de un elemento padre (dos botones) utilizar <></>
+

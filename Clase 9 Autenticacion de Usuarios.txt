@@ -1,0 +1,22 @@
+Concepto de modularizacion https://youtu.be/RH7IwvAAPd4?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=943
+    Hacer la constatacion de si el producto es existente o no https://youtu.be/RH7IwvAAPd4?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=1293
+        Cuando usa el onClick del boton comprar lo agrega directamente.
+            Reemplaza la funcion de agregarCarrito por setCarrito https://youtu.be/RH7IwvAAPd4?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=1329
+        Sirve para agrupar los productos y que no se genere una fila mas en la lista.k
+
+Prop drilin: las propiedades van perforando los componentes y se van pasando de mano en mano aquellos elementos que van acompartir https://youtu.be/RH7IwvAAPd4?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=2220    https://youtu.be/RH7IwvAAPd4?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=2246
+
+
+ Sacar todas las setters y separar contexto de usuarios o contexto de carrito y usar useOutContext o un useCardContext https://youtu.be/RH7IwvAAPd4?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=3131  yy   https://youtu.be/RH7IwvAAPd4?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=5737
+    
+
+    Modularizar el contexto https://youtu.be/RH7IwvAAPd4?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=4901
+
+Local storage: el administrador puede ver las ventas que se realizaron https://youtu.be/RH7IwvAAPd4?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=5103
+
+AFTER https://youtu.be/mQeTyvPl9yM?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=10
+
+ diferencia de pagina web y un spa (single page aplication) en react https://youtu.be/mQeTyvPl9yM?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=757
+
+ ACA QUEDE https://youtu.be/mQeTyvPl9yM?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=4220
+  

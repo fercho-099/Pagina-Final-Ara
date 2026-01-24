@@ -1,0 +1,22 @@
+https://youtu.be/CIqfU0QTJ7o?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u
+
+
+https://youtu.be/CIqfU0QTJ7o?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=1983
+    Va al componente editar y hace uso de STATE no de USESTATE
+
+permite editar de producto haciendo la carga https://youtu.be/CIqfU0QTJ7o?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=3130
+
+usuario agregue un producto y suceda alguna indicacion visual https://youtu.be/CIqfU0QTJ7o?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=3326
+    Windows confirm: Muestra ventana con aceptar o cancelar (retorna un booleano).
+
+    Paso para eliminar https://youtu.be/CIqfU0QTJ7o?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=4236
+
+Se contruye componente donde te muestra que producto elimianr https://youtu.be/CIqfU0QTJ7o?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=4981
+    Utiliza set time out y luego el reload de pagina web
+
+Context api para producto https://youtu.be/CIqfU0QTJ7o?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=5771
+    unificar agregar + editar. Product context, extratac las funciones que se repiten en agregar y editar.
+        Si ejecuta agregar, la funcion ira a llamar al metodo formularioProducto.
+
+Productos con contexto y productos sin contexto https://youtu.be/Odj6tAJH994?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=3376 ¿a que hace referencia? contexto global?
+    La parte de context api que parte del codigo se repite si puedo crear un contexto con eso.
