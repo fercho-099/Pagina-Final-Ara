@@ -24,7 +24,7 @@ function ListaProductosJardineria({ Jardinerias }) {
               />
               <h3 className="Nombre-Maquinaria">{id.nombre}</h3>
               <p className="Nombre-rol">{id.description}</p>
-              <button className="ComprarOvender" onClick={Presionado}>
+              <button className="Comprar" onClick={Presionado}>
                 {botonTexto}
               </button>
             </div>

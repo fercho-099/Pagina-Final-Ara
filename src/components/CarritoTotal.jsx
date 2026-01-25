@@ -12,21 +12,21 @@ function Layout({children}){
     );
 }
 
-function ProductList ({agregarCarrito}){
-        const Jardinerias = [{id: 1, nombre: 'Automower 305', precio: 25.000, rol:'Jardineria', description: 'Nueva cortadora de cesped automatica para que no tengas que cortar pasto vos mismo',imagen: 'https://acdn-us.mitiendanube.com/stores/884/906/products/849188-mla28026852731_082018-o-ebe2f158828d29678615447167173809-640-0.jpg'
+function ProductList ({productosAMostrar ,agregarCarrito}){
+       /* const Jardinerias = [{id: 1, nombre: 'Automower 305', precio: 25.000, rol:'Jardineria', description: 'Nueva cortadora de cesped automatica para que no tengas que cortar pasto vos mismo',imagen: 'https://acdn-us.mitiendanube.com/stores/884/906/products/849188-mla28026852731_082018-o-ebe2f158828d29678615447167173809-640-0.jpg'
             },
             {id: 2, nombre:'Corta cesped profesional Giro cero', precio: 15.000, rol:'Jardineria', description:'Esta cortadora decesped es tope gama alta para uso de todos los dias', imagen:'https://cdn.rumbosrl.com.ar/uploads/products/images/large/7678901.png'
             },
             {id: 3, nombre:'Desbrozadora 226R', rol:'Jardineria', precio: 78.000, description:'La mas completa de las Desbrozadoras del mercado', imagen: 'https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/brushcutters/photos/studio/h210-0380.webp?v=e18e5774fac9dd3e&format=SCHEMA_ORG_4_3'
             },
-        ];
+        ];*/
 
         return(
             <div>
-                <h2>Produtos Agregado</h2>
-                {Jardinerias.map((producto) => (
-                    <div key= {producto.id}>
-                    <span>{producto.nombre} - ${producto.precio.toFixed(3)}</span>
+                <h2>Produtos Disponibles</h2>
+                {productosAMostrar.map((producto, index) => (
+                    <div key= {index}>
+                    <span>{producto.nombre} - {producto.descripcion} - {producto.precio}</span>
                     <button 
                         onClick={() => agregarCarrito(producto)}
                     > 
@@ -69,7 +69,7 @@ function Carrito({carrito, vaciarCarrito}){
 }
 
 
-function EcommerceTotal(){
+function EcommerceTotal({Jardinerias}){
 
     const [carrito, setCarrito] = useState([]);
 
@@ -84,7 +84,7 @@ function EcommerceTotal(){
     return(
         <Layout>
                 
-                <ProductList agregarCarrito = {agregarCarrito} />
+                <ProductList productosAMostrar = {Jardinerias} agregarCarrito = {agregarCarrito} />
                 <Carrito carrito = {carrito} vaciarCarrito = {vaciarCarrito} />
                 
         </Layout>
