@@ -79,6 +79,11 @@ color: white;
 
 
  /* DIV ACERCA ARA */
+
+ .drop-Construccion{
+  position: relative; /* eeste sirve para ordenar los botones del nav (inicio construccion, jardineria, hogar */
+  /*display: inline-block; */
+}
 .btn-Construccion{
 
   background-color: #f79620;
@@ -90,35 +95,38 @@ color: white;
   cursor: pointer;
 }
 
+.drop-content-construccion{
 
-.btn-Construccion{
-
-  background-color: #f79620;
-  color: #000000;
-  display: flex;
-  padding: 16px;
-  font-size: 16px;
-  border-radius: 16px;
-  cursor: pointer;
+  display: none;
+  position: absolute;
+  top:100%;
+  background-color: #f9f9f9; /* Color del menu cuando se desplega */
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*le da el efecto de sombra cuando se desplega el menu */
+  border-radius: 16px;  /*redondea las esquinas del menu desplegable */
+  z-index: 10;
 }
 
-.drop-Hogar{
-  position: relative;
-  /*display: inline-block;*/
+.drop-content-construccion a{
+
+  color: #000000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; /*es como se mostrara o desplegara el menu despues de clickear el boton inicio*/
+  text-align: center; /*centra los item del boton inicio*/
 }
 
-.btn-Hogar{
-
-  background-color: #f79620;
-  color: #000000;
-  display: flex;
-  padding: 16px;
-  font-size: 16px;
-  border-radius: 16px;
-  cursor: pointer;
+.drop-content-construccion a:hover{
+  background-color: #ddd;  /*este efecto le da el color cuando se le apoya el mouse en algun item de la lista del boton inicio */
+  display: block; /* no se para que sirve */
 }
 
 /* DIV CONTACTO */
+
+.drop-Jardineria{
+  position: relative;
+  /*display: inline-block;*/
+}
 .btn-Jardineria{
 
   background-color: #f79620;
@@ -131,21 +139,88 @@ color: white;
   text-decoration: none;
 }
 
-.drop-Construccion,
-.drop-Hogar,
-.drop-Jardineria,
-.drop-Inicio{
+.drop-content-jardineria{
 
+  display: none;
+  position: absolute;
+  top:100%;
+  background-color: #f9f9f9; /* Color del menu cuando se desplega */
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*le da el efecto de sombra cuando se desplega el menu */
+  border-radius: 16px;  /*redondea las esquinas del menu desplegable */
+  z-index: 10;
+}
+
+.drop-content-jardineria a{
+
+  color: #000000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; /*es como se mostrara o desplegara el menu despues de clickear el boton inicio*/
+  text-align: center; /*centra los item del boton inicio*/
+}
+
+.drop-content-jardineria a:hover{
+  background-color: #ddd;  /*este efecto le da el color cuando se le apoya el mouse en algun item de la lista del boton inicio */
+  display: block; /* no se para que sirve */
+}
+
+.drop-Ferreteria{
+  position: relative;
+  /*display: inline-block;*/
+}
+
+.btn-Ferreteria{
+
+  background-color: #f79620;
+  color: #000000;
+  display: flex;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.drop-content-ferreteria{
+
+  display: none;
+  position: absolute;
+  top:100%;
+  background-color: #f9f9f9; /* Color del menu cuando se desplega */
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*le da el efecto de sombra cuando se desplega el menu */
+  border-radius: 16px;  /*redondea las esquinas del menu desplegable */
+  z-index: 10;
+}
+
+.drop-content-ferreteria a{
+
+  color: #000000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; /*es como se mostrara o desplegara el menu despues de clickear el boton inicio*/
+  text-align: center; /*centra los item del boton inicio*/
+}
+
+.drop-content-ferreteria a:hover{
+  background-color: #ddd;  /*este efecto le da el color cuando se le apoya el mouse en algun item de la lista del boton inicio */
+  display: block; /* no se para que sirve */
+}
+
+.drop-Inicio,
+.drop-Construccion,
+.drop-Jardineria,
+.drop-Ferreteria{
   flex-grow: 1;
   display: flex;
   /*justify-content: center;
   align-items: center;*/
 }
 
-.btn-Construccion,
-.btn-Hogar,
 .btn-Inicio,
-.btn-Jardineria{
+.btn-Construccion,
+.btn-Jardineria,
+.btn-Ferreteria{
 
   background-color: #f79620;
   color: #000000;
