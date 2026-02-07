@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 function Layout({children}){
 
@@ -20,7 +20,10 @@ function ProductList ({agregarCarrito}){
             {id: 3, nombre:'Desbrozadora 226R', rol:'Jardineria', precio: 78.000, description:'La mas completa de las Desbrozadoras del mercado', imagen: 'https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/brushcutters/photos/studio/h210-0380.webp?v=e18e5774fac9dd3e&format=SCHEMA_ORG_4_3'
             },
         ];
-
+        /* const [productos, setProductos] = useState([]);
+        const [cargando, setCargando] = useState(true);
+        const [error, setError] = useState(null);*/
+        
         return(
             <div>
                 <h2>Produtos Agregado</h2>

@@ -18,7 +18,7 @@ const Jardinerias = [{nombre: 'Automower 305', rol:'Jardineria', description: 'N
             },
             {nombre:'Desbrozadora 226R', rol:'Jardineria', description:'La mas completa de las Desbrozadoras del mercado', imagen: 'https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/brushcutters/photos/studio/h210-0380.webp?v=e18e5774fac9dd3e&format=SCHEMA_ORG_4_3'
             },
-        ];
+        ]; 
         const menuAra = ['¿Quienes somos?', 'Valores', 'Ofertas'];
         
 
@@ -29,7 +29,7 @@ return (
         <Main />
             <ListaProductosJardineria Jardinerias={Jardinerias}/>
             <GaleriaIntereses menuAra= {menuAra} />   
-        <EcommerceTotal Jardinerias = {Jardinerias} />
+        <EcommerceTotal Jardinerias = {Jardinerias} />  
         <Footer />
         </>
         
