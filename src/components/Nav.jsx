@@ -18,7 +18,7 @@ function Nav() {
         <nav className="Nav-container">   
             
                     <div className="drop-Inicio" >
-                       {/* <button className="btn-Inicio" onClick={toggleDropdown}> Inicio</button> */}
+    
                     <button className="btn-Inicio" onClick={() => toggleDropdown('inicio')}>
                         Inicio
                     </button>
@@ -32,11 +32,11 @@ function Nav() {
                         </div>
                     </div>
                     <div className="drop-Construccion" >
-                       {/* <button className="btn-Construccion" onClick ={toggleDropdown}>Construccion</button> */}
+            
                     <button className = "btn-Construccion" onClick = {() => toggleDropdown('construccion')}>
                         Construccion
                     </button>   
-                        {/* <div className="drop-content-construccion" style={{display:isDropdownOpen ? 'block' : 'none'}}>*/ }
+                        
                             <div className="drop-content-construccion" style={{display: activeDropdown ==='construccion' ? 'block' : 'none'}}>
 
                                 <a href="/husqvarna" onClick={toggleDropdown} className="dropdown-link">Husqvarna</a>

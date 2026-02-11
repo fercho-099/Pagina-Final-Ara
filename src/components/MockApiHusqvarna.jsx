@@ -13,17 +13,19 @@ export default function Carrito(){
             setCargando(false);
         })
         .catch((error) => {
-            {console.error("Error!", error)}
+            console.error("Error!", error)
+            setCargando(false);
+            setError("No se puedieron cargar los productos");
             setCargando(false);
         });
     }, []);
 
     if(cargando) return <p>Cargando Productos...</p>;
-    if(error) return <p>{Error}</p>;
+    if(error) return <p>{error}</p>;
 
     return (
         <ul>
-            {producto.map((producto) => (
+            {productos.map((producto) => (
                 <li key={producto.id}>
                     Nombre: {producto.Nombre}
                     <br />
