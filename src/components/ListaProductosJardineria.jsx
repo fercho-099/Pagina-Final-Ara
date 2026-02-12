@@ -5,21 +5,21 @@ import '../styles/style.css';
 function ListaProductosJardineria({ productosApi, agregarCarrito }) {
 
   const botonTexto = "Comprar";
- 
+
   return (  
     <div className= "EquipoJardineria">    
-        {productosApi.map((id, index)  => (
+        {productosApi.map((producto)  => (
 
-            <div key ={productosApi.id || index} className="ProductosAra">
+            <div key ={producto.id || index} className="ProductosAra">
 
               <img
-              src={productosApi.Imagen}
-              alt={productosApi.Nombre}              
+              src={producto.Imagen}
+              alt={producto.Nombre}              
               className="rol-imagen"
               />
-              <h3 className="Nombre-Maquinaria">{productosApi.Nombre}</h3>
-              <p className="Nombre-rol">{productosApi.Descripcion}</p>
-              <button className="ComprarOvender" onClick={() => agregarCarrito(productosApi)}>
+              <h3 className="Nombre-Maquinaria">{producto.Nombre}</h3>
+              <p className="Nombre-rol">{producto.Descripcion}</p>
+              <button className="ComprarOvender" onClick={() => agregarCarrito(producto)}>
                 {botonTexto}
               </button>
             </div>

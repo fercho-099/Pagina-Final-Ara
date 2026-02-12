@@ -7,7 +7,13 @@ export default function Carrito({carrito, setCarrito}){
         setCarrito([]);
     };
 
-    const total = carrito.reduce ((sum,item) => sum + (item.Precio || 0), 0);
+    const total = carrito.reduce((sum, item) => sum + Number(item.Precio), 0);
+    const monedaArg = (valor) =>{
+        return new Intl.NumberFormat('es-AR' , {
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 3
+        }).format(valor);
+    };
 
     return(
         <div>
@@ -16,13 +22,13 @@ export default function Carrito({carrito, setCarrito}){
                 <p>No hay Productos Seleccionados</p>
             )   : (
                 <>
-                    {carrito.map((item, index) => (
-                        <div key={item.id || index}>
-                            {item.Nombre} - ${item.Precio.toLocaleString()}
+                    {carrito.map((item) => (
+                        <div key={item.id}>
+                            {item.Nombre} - ${monedaArg(item.Precio)}
                         </div>
                     ))}
                     <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#f5f5f5', fontWeight: 'bold' }}>
-                        Total: ${total.toLocaleString()}
+                        Total: ${monedaArg(total)}
                     </div>
                     <button
                         onClick = {vaciarCarrito} ///aca iria vaciar pero con el estilo de ListaProductosJardineria

@@ -1,6 +1,8 @@
 import {useState, useEffect} from 'react';
 import ListaProductosJardineria from './ListaProductosJardineria';
 import Carrito from './CarritoCompras';
+import MockApiHusqvarna from './MockApiHusqvarna';
+
 function Layout({children}){
 
     return(
@@ -46,16 +48,18 @@ function EcommerceTotal(){
             </Layout>
         );
     }*/
-
+    const [productosApi, setProductosApi] = useState([]);
     const [carrito, setCarrito] = useState([]);
+
     const agregarCarrito = (producto) => {
         setCarrito([...carrito, producto]);
     };
     return(
         
             <Layout>  
-            <MockApiHusqvarna />
+            <MockApiHusqvarna enviarDatos={setProductosApi} />
             <ListaProductosJardineria productosApi = {productosApi} agregarCarrito = {agregarCarrito}   />
+            
             <hr />
             <Carrito carrito= {carrito} setCarrito={setCarrito}   />
             </Layout>

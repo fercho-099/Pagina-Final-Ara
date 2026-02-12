@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
 
-export default function Carrito(){
-    const [productos, setProductos] = useState([]);
+export default function MockApiHusqvarna({enviarDatos}){
+    ///const [productos, setProductos] = useState([]);
     const [cargando, setCargando] = useState(true);
     const [error, setError] = useState(null);
 
@@ -9,21 +9,20 @@ export default function Carrito(){
         fetch("https://698624936964f10bf2559d53.mockapi.io/AraMaquinaria/ConstruccionHusqvarna")
         .then((respuesta) => respuesta.json())
         .then((datos) => {
-            setProductos(datos);
+            enviarDatos(datos);
             setCargando(false);
         })
         .catch((error) => {
             console.error("Error!", error)
-            setCargando(false);
             setError("No se puedieron cargar los productos");
             setCargando(false);
         });
-    }, []);
+    }, [enviarDatos]);
 
     if(cargando) return <p>Cargando Productos...</p>;
     if(error) return <p>{error}</p>;
 
-    return (
+    return null; /* (
         <ul>
             {productos.map((producto) => (
                 <li key={producto.id}>
@@ -37,5 +36,5 @@ export default function Carrito(){
                 </li>
             ))}
         </ul>
-    );
+    );*/
 }

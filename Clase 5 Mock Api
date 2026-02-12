@@ -43,3 +43,37 @@ AFTER
 
 quede acadesde el video:  https://698624936964f10bf2559d53.mockapi.io/AraMaquinaria/:endpoint 6 FEBRERO quede aca para configurar el  mock api
     pero primero debo ver aca para crear los componente que da funcion al mock api https://youtu.be/RBFlZvm4EHk?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=1111
+
+
+
+
+
+
+MOCK API POR SI SE BORRA:
+
+[
+  {
+    "Nombre": "Automower 305",
+    "Precio": 15000,
+    "Rol": "Jardineria",
+    "Descripcion": "Husqvarna Automower® 305 presenta un diseño compacto y es ideal para jardines más pequeños y complejos de hasta 600 m2, manejando fácilmente pendientes con una inclinación del 40%.(NO INCLUYE KIT DE INSTALACIÓN). Precio $15.000.",
+    "Imagen": "https://acdn-us.mitiendanube.com/stores/884/906/products/849188-mla28026852731_082018-o-ebe2f158828d29678615447167173809-640-0.jpg",
+    "id": "1"
+  },
+  {
+    "Nombre": "Corta cesped profesional Giro cero",
+    "Precio": 25000,
+    "Rol": "Jardineria",
+    "Descripcion": "¿Estás pensando en comprar un nuevo cortacésped de giro cero? Un radio de giro cero significa que no quede ninguna hierba sin cortar cuando se llega al final de una hilera de corte, y se hace un giro de 180° para comenzar la siguiente. Los cortacéspedes de giro cero son excelentes para un corte rápido y eficiente en todo tipo de áreas y te ofrecen unos resultados precisos y fiables. Precio $ 25.000.",
+    "Imagen": "https://cdn.rumbosrl.com.ar/uploads/products/images/large/7678901.png",
+    "id": "2"
+  },
+  {
+    "Nombre": "Desbrozadora 226R",
+    "Precio": 78000,
+    "Rol": "Jardineria",
+    "Descripcion": "Husqvarna 226R es una desbrozadora de alta duración desarrollada para el trabajo de mantenimiento. Con un motor confiable, una máxima resistencia y un filtro de aire, una larga vida útil. Se entrega junto con un cabezal de corte (T35), la cuchilla de hierba (Multi 255-3) y un arnés estándar. Precio $78.000.",
+    "Imagen": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/brushcutters/photos/studio/h210-0380.webp?v=e18e5774fac9dd3e&format=SCHEMA_ORG_4_3",
+    "id": "3"
+  }
+]
