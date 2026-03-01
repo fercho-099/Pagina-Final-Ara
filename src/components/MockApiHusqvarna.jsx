@@ -1,40 +1,44 @@
 import {useState, useEffect} from 'react';
 
-export default function MockApiHusqvarna({enviarDatos}){
-    ///const [productos, setProductos] = useState([]);
+export default function MockApiHusqvarna({url,enviarDatos, onError}){
+    
     const [cargando, setCargando] = useState(true);
-    const [error, setError] = useState(null);
+    const [errorLocal, setErrorLocal] = useState(null);
 
     useEffect(() => {
-        fetch("https://698624936964f10bf2559d53.mockapi.io/AraMaquinaria/ConstruccionHusqvarna")
-        .then((respuesta) => respuesta.json())
+        if (!url) return;
+
+        const controller= new AbortController();
+        const {signal} = controller;
+
+        setCargando(true);        
+        setErrorLocal(null);        
+
+        fetch(url,{signal})
+        .then((respuesta) => {
+            if (!respuesta.ok) throw new Error(`HTTP ${respuesta.status}`); ///¿que es ok?
+            return respuesta.json();
+        })
         .then((datos) => {
             enviarDatos(datos);
             setCargando(false);
         })
-        .catch((error) => {
-            console.error("Error!", error)
-            setError("No se puedieron cargar los productos");
+        .catch((err) => {
+            if(signal.aborted) return;
+            console.error("Error!", err);
+            const msg='No se pudieron cargar los productos';
+            setErrorLocal(msg);
             setCargando(false);
+            onError?.(msg);
         });
-    }, [enviarDatos]);
+        return() => controller.abort();
+    }, [url, enviarDatos, onError]);
 
-    if(cargando) return <p>Cargando Productos...</p>;
-    if(error) return <p>{error}</p>;
+    if(cargando)return <p>Cargando Productos...</p>; 
+    
+    else if(errorLocal){
+        return <p>{errorLocal}</p>;
+    }
+    else return null; 
 
-    return null; /* (
-        <ul>
-            {productos.map((producto) => (
-                <li key={producto.id}>
-                    Nombre: {producto.Nombre}
-                    <br />
-                    Descripcion: {producto.Descripcion}
-                    <br />
-                    Precio: ${producto.Precio}
-                    <br />
-                    <img src={producto.Imagen} alt={producto.Nombre} width="100" />
-                </li>
-            ))}
-        </ul>
-    );*/
 }

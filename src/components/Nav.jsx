@@ -1,17 +1,18 @@
 import React, {useState} from 'react';   
 import '../styles/style.css';
 
-function Nav() {   
+function Nav({onSelect, active}) {   
     
-    ///const [isDropdownOpen, setIsDrowdownOpen] = useState(false);
-    const [activeDropdown, setActiveDropdown] = useState(null);
 
-    /* const toggleDropdown = () =>{
-        setIsDrowdownOpen(!isDropdownOpen);
-    }*/
+    const [activeDropdown, setActiveDropdown] = useState(null);
 
     const toggleDropdown =(menuName) =>{
         setActiveDropdown(activeDropdown === menuName ? null : menuName);
+    };
+
+    const handlePick = (menu, item) => {
+        onSelect(menu, item);
+        setActiveDropdown(null);
     };
 
     return (   
@@ -24,11 +25,11 @@ function Nav() {
                     </button>
                         <div className="drop-content-inicio" style={{ display: activeDropdown === 'inicio' ? 'block' : 'none' }}>  
 
-                                    <a href="/Marcas" onClick={toggleDropdown} className="dropdown-link">Marcas</a>
+                                    < button type="button" onClick={() =>handlePick('inicio' , 'marcas')} className="dropdown-link">Marcas</button>
                                 
-                                    <a href="/Quienes Somos" className="dropdown-link"> ¿Quienes somos?</a>
+                                    < button type="button" onClick={() => handlePick('inicio', 'quienes-somos')}className="dropdown-link"> ¿Quienes somos?</button>
                                 
-                                    <a href="/Valores" className="dropdown-link">Valores</a>
+                                    < button type="button" onClick={() => handlePick('inicio', 'valores')} className="dropdown-link">Valores</button>
                         </div>
                     </div>
                     <div className="drop-Construccion" >
@@ -39,46 +40,46 @@ function Nav() {
                         
                             <div className="drop-content-construccion" style={{display: activeDropdown ==='construccion' ? 'block' : 'none'}}>
 
-                                <a href="/husqvarna" onClick={toggleDropdown} className="dropdown-link">Husqvarna</a>
+                                < button type="button" onClick={() =>handlePick('construccion', 'husqvarna')} className="dropdown-link">Husqvarna</button>
 
-                                <a href="/brigsstrattion" onClick={toggleDropdown} className="dropdown-link">Brigs & Strattion</a>
+                                < button type="button" onClick={() =>handlePick('construccion', 'brigsStration')} className="dropdown-link">Brigs & Strattion</button>
 
-                                <a href="/niwa" onClick={toggleDropdown} className="dropdown-link">Niwa</a>
+                                < button type="button" onClick={() =>handlePick('construccion', 'niwa')} className="dropdown-link">Niwa</button>
 
-                                <a href="/villa" onClick={toggleDropdown} className="dropdown-link">Villa</a>
+                                < button type="button" onClick={() =>handlePick('construccion', 'villa')} className="dropdown-link">Villa</button>
 
-                                <a href="/kohler" onClick={toggleDropdown} className="dropdown-link">Kohler</a>
+                                < button type="button" onClick={() => handlePick('construccion' , 'Kohler')} className="dropdown-link">Kohler</button>
                             </div>
                     </div>
                     <div className="drop-Jardineria">
-                    <button className="btn-Jardineria" onClick = {() => toggleDropdown('Jardineria')}>
+                    <button className="btn-Jardineria" onClick = {() => toggleDropdown('jardineria')}>
                         Bosques y Jardineria 
                     </button>
-                            <div className="drop-content-jardineria" style={{display: activeDropdown === 'Jardineria' ? 'block' : 'none'}}>
+                            <div className="drop-content-jardineria" style={{display: activeDropdown === 'jardineria' ? 'block' : 'none'}}>
 
-                                <a href="/CabezalesUniversales" onClick={toggleDropdown}>Cabezales Manuales Universales</a>
-                                <a href="/AceitesMaquina" onClick={toggleDropdown}>Aceites para Maquinas 2T y 4T</a>
-                                <a href="/Espadas" onClick={toggleDropdown}>Espadas</a>
-                                <a href="/Correas" onClick={toggleDropdown}>Correas para Tractores corta cesped</a>
-                                <a href="/Tanza" onClick={toggleDropdown}>Tanza</a>
-                                <a href="/Cadenas" onClick={toggleDropdown}>Cadenas</a>
+                                < button type="button" onClick={() => handlePick('jardineria','cabezales')} className='dropdown-link'>Cabezales Manuales Universales</button>
+                                < button type="button" onClick={() => handlePick('jardineria', 'aceites')} className='dropdown-link'>Aceites para Maquinas 2T y 4T</button>
+                                < button type="button" onClick={() => handlePick('jardineria', 'espadas')} className='dropdown-link'>Espadas</button>
+                                < button type="button" onClick={() => handlePick('jardineria', 'correas')} className='dropdown-link'>Correas para Tractores corta cesped</button>
+                                < button type="button" onClick={() => handlePick('jardineria', 'tanza')} className='dropdown-link'>Tanza</button>
+                                < button type="button" onClick={()=> handlePick('jardineria', 'cadenas')} className='dropdown-link'>Cadenas</button>
                     </div>
                 </div> 
                 <div className="drop-Ferreteria">
-                <button className="btn-Ferreteria" onClick = {() => toggleDropdown('Ferreteria')}>
+                <button className="btn-Ferreteria" onClick = {() => toggleDropdown('ferreteria')}>
                     Ferreteria
                 </button>
-                            <div className="drop-content-ferreteria" style={{display: activeDropdown ==='Ferreteria' ? 'block' : 'none'}}>
+                            <div className="drop-content-ferreteria" style={{display: activeDropdown ==='ferreteria' ? 'block' : 'none'}}>
 
-                                <a href="/Soldadora" onClick={toggleDropdown}>Soldadoras</a>
-                                <a href="/Compresores" onClick={toggleDropdown}>Compresores</a>
-                                <a href="/Hidrolavadoras" onClick={toggleDropdown}>Hidrolavadoras</a>
-                                <a href="/Soldadura" onClick={toggleDropdown}>Soldadura</a>
-                                <a href="/Aspiradoras" onClick={toggleDropdown}>Aspiradoras</a>
-                                <a href="/Hormigoneras" onClick={toggleDropdown}>Hormigoneras</a>
-                                <a href="/BombasAgua" onClick={toggleDropdown}>Bombas de Agua</a>
-                                <a href="/Pintureria" onClick={toggleDropdown}>Pintureria</a>
-                                <a href="/Otros" onClick={toggleDropdown}>Otros</a>
+                                < button type="button" onClick={()=> handlePick('ferreteria', 'soldadoras')} className='dropdown-link'>Soldadoras</button>
+                                < button type="button" onClick={()=> handlePick('ferreteria', 'compresores')} className='dropdown-link'>Compresores</button>
+                                < button type="button" onClick={()=> handlePick('ferreteria', 'hidros')} className='dropdown-link'>Hidrolavadoras</button>
+                                < button type="button" onClick={()=> handlePick('ferreteria', 'soldadura')} className='dropdown-link'>Soldadura</button>
+                                < button type="button" onClick={()=> handlePick('ferreteria', 'aspiradoras')} className='dropdown-link'>Aspiradoras</button>
+                                < button type="button" onClick={()=> handlePick('ferreteria', 'hormigoneras')} className='dropdown-link'>Hormigoneras</button>
+                                < button type="button" onClick={()=> handlePick('ferreteria', 'bombas')} className='dropdown-link'>Bombas de Agua</button>
+                                < button type="button" onClick={()=> handlePick('ferreteria', 'pintureria')} className='dropdown-link'>Pintureria</button>
+                                < button type="button" onClick={()=> handlePick('ferreteria', 'otros')} className='dropdown-link'>Otros</button>
 
                     </div>
                 </div> 
