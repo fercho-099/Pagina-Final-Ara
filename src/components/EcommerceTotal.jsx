@@ -57,7 +57,7 @@ function EcommerceTotal({seleccion}){
     const url= useMemo(() => resolveUrl(seleccion), [seleccion]);
 
     const agregarCarrito = useCallback((producto) => {
-        setCarrito([...carrito, producto]);
+        setCarrito(carrito =>[...carrito, producto]);
     }, []);
 
     
@@ -76,12 +76,20 @@ function EcommerceTotal({seleccion}){
     [carrito]
     );
 
+    const handleEnviarDatos = useCallback((datos) =>{
+        setProductos(datos || []);
+        setError(null);
+    } , []);
+
+    const handleError = useCallback((msg) => {
+        setError(msg);
+    } , []);
 
     return(
         
             <section className="EcommerceTotal">
             
-            <MockApiHusqvarna url={url} enviarDatos={(datos)=> { setProductos(datos || []); setError(null);}} onError={(msg)=> setError(msg)}/>
+            <MockApiHusqvarna url={url} enviarDatos={handleEnviarDatos} onError={handleError}  tieneDatos={productos.length > 0}/>
             {error ? (<p className="error">{error}</p>) : (
                 <>
             <ListaProductosJardineria productosApi = {productos} agregarCarrito = {agregarCarrito}   />

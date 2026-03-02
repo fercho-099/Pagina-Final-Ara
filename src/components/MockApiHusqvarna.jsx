@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 
-export default function MockApiHusqvarna({url,enviarDatos, onError}){
+export default function MockApiHusqvarna({url,enviarDatos, onError, tieneDatos}){
     
     const [cargando, setCargando] = useState(true);
     const [errorLocal, setErrorLocal] = useState(null);
@@ -32,13 +32,12 @@ export default function MockApiHusqvarna({url,enviarDatos, onError}){
             onError?.(msg);
         });
         return() => controller.abort();
-    }, [url, enviarDatos, onError]);
+    }, [url]);
 
-    if(cargando)return <p>Cargando Productos...</p>; 
     
-    else if(errorLocal){
-        return <p>{errorLocal}</p>;
-    }
-    else return null; 
+    if(cargando && !tieneDatos)return <p>Cargando Productos...</p>; 
+    
+    if (errorLocal || !tieneDatos) return <p>{errorLocal}</p>;
+    return null;
 
 }
