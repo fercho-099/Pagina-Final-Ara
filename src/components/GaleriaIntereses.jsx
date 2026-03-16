@@ -1,22 +1,26 @@
-function GaleriaIntereses({ menuAra }) {  //corresponde a ¿quienes somos? Valores Y Ofertas.
-  function capturarClic(e) {
-    /*e.target.style.backgroundColor = '#ef8009ff';
-    e.target.style.color = 'white'; */   ///ver el evento para mas adelante
+import {Link} from 'react-router-dom'
 
-    ///se deberia poner la direccion para comprar los productos, cargarlo en el carrito
-  }
+
+function GaleriaIntereses() {  //corresponde a ¿quienes somos? Valores Y Ofertas.
+  const menuAra = [
+    {label:'¿Quienes somos?', to: '../enlacesGenerales/QuienesSomos'},
+    {label: 'Contacto', to: '../enlacesGenerales/Contacto'}
+  ];
 
   return (
     <div className="galeria-intereses">
-      {menuAra.map((menuAra) => (
-        <button
-          key={menuAra} 
-          className="interes-boton"
-          onClick={capturarClic}
-        >
-          {menuAra}
-        </button>
+      <ul>
+
+          {menuAra.map((item) => (
+        
+            <li key={item.to}>
+              <Link to={item.to}  className="interes-boton" >
+                {item.label}
+              </Link>
+            </li>
+        
       ))}
+      </ul>      
     </div>
   );
 }

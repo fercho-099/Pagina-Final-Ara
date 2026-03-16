@@ -34,7 +34,7 @@ USE PARAMS https://youtu.be/-e1D6YlIYp8?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&
 
 AFTER CLASS
 
-Como pusar el mockapi si hayun errorhttps://youtu.be/8wlSdPjEMdw?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=1174
+Como pusar el mockapi si hayun error https://youtu.be/8wlSdPjEMdw?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=1174
 Como instalar git https://youtu.be/8wlSdPjEMdw?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=1870
 Para instalar los modulos de react en un proyecto cuando manipulamos el proyecto desde git de visual studio code  https://youtu.be/8wlSdPjEMdw?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=2102
 
