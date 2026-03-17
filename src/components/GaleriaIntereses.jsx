@@ -3,8 +3,8 @@ import {Link} from 'react-router-dom'
 
 function GaleriaIntereses() {  //corresponde a ¿quienes somos? Valores Y Ofertas.
   const menuAra = [
-    {label:'¿Quienes somos?', to: '../enlacesGenerales/QuienesSomos'},
-    {label: 'Contacto', to: '../enlacesGenerales/Contacto'}
+    {label:'¿Quienes somos?', to: 'QuienesSomos'},
+    {label: 'Contacto', to: 'Contacto'}
   ];
 
   return (
