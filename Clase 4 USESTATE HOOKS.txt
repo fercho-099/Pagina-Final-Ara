@@ -11,7 +11,3 @@ Manejador de evento, onchange es la palabra clave para detectar un cambio https:
 
 crea un objeto para enviar https://youtu.be/MZkv-JMBCNg?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=4710  
     Utilizacion de spread operator
-
-
-Documentacion oficial de useState:
-    https://es.react.dev/reference/react/useState

@@ -1,5 +1,5 @@
 /* ------- ListaProductosJardineria   tarjeta ------- */
-.Comprar {
+.ComprarOvender {
     
     background-color: #f5f4f4;
     color: #ff991b;
@@ -11,7 +11,7 @@
     
 }
 
-.Comprar:hover {
+.ComprarOvender:hover {
   background-color: #000000;
   color: #f79620;  
 }
