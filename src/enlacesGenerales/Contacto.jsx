@@ -33,8 +33,6 @@ function Contacto(){
             </div>
         </div>
 
-
-
     );
 }
 export default Contacto;

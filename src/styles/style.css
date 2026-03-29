@@ -279,3 +279,17 @@ color: white;
   justify-content: center;
   align-items: center;
 }
+
+.contenedor-boton{
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+}
+.interes-boton{
+
+  background-color: #f79620;
+  color: #000000;
+  text-decoration: none;
+  
+}
