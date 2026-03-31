@@ -16,7 +16,7 @@ function ListaProductosJardineria({ productosApi, agregarCarrito }) {
               src={producto.Imagen}
               alt={producto.Nombre}              
               className="rol-imagen"
-              loading="lazy" ///que carajos es lazy
+              loading="lazy" 
               />
               <h3 className="Nombre-Maquinaria">{producto.Nombre}</h3>
               <p className="Nombre-rol">{producto.Descripcion}</p>

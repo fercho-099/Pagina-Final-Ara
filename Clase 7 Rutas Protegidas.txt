@@ -29,6 +29,14 @@ Dentro de la funcion app, acusa  dos contstantes https://youtu.be/U_hUTipV90k?li
 
 Ageega pagar dentro de app componente https://youtu.be/U_hUTipV90k?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=5298
 
+USE PARAMS https://youtu.be/-e1D6YlIYp8?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=5497 
+    Captura el id como elemento dinamico (use params)
+
+https://youtu.be/-e1D6YlIYp8?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=5552
+
+    uselocation, captura el state- se encarga que la memoria interna de un componente, al almacenar todo el objeto de un producto, lo guarda y lo recibe Location
+    Usa la memoria local del componente, 
+    Location sirve para pasar el producto a otro componente pasando el objeto completo y luego del otro lado, se puede extraer la informacion (precio, nombre, descripcion)
 
 Carrito trae el navigate, forzar la navegacion, se abre el componente pagar y se le agrega el boton pagar https://youtu.be/U_hUTipV90k?list=PLEB5IwS0LzBJsA6sGNpUM5rSLc3Aw1z0u&t=5585a
 

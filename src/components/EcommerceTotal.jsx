@@ -1,4 +1,4 @@
-import {useMemo,useState, useCallback} from 'react';
+import {useMemo,useState, useCallback, useEffect} from 'react';
 import ListaProductosJardineria from './ListaProductosJardineria';
 import Carrito from './CarritoCompras';
 import MockApiHusqvarna from './MockApiHusqvarna';
@@ -50,8 +50,16 @@ function resolveUrl(selection) {
 function EcommerceTotal({seleccion}){
 
     const [productos,setProductos] = useState([]);
-    ///const [productosApi, setProductosApi] = useState([]);
-    const [carrito, setCarrito] = useState([]);
+    
+    const [carrito, setCarrito] = useState(() => {
+        const guardado = localStorage.getItem("carrito_maquinaria");
+        return guardado ? JSON.parse(guardado) : [];
+    });
+
+    useEffect(()=>{
+        localStorage.setItem("carrito_maquinaria", JSON.stringify(carrito));
+    }, [carrito]);
+    
     const [error, setError] = useState(null);
 
     const url= useMemo(() => resolveUrl(seleccion), [seleccion]);
@@ -62,7 +70,7 @@ function EcommerceTotal({seleccion}){
 
     
     const quitarDelCarrito = useCallback((id) => {
-    setCarrito((prev) => prev.filter((p, idx) => (p.id ?? idx) !== id)); ///prev responde  a ...carrito linea 60?
+    setCarrito((prev) => prev.filter((p, idx) => (p.id ?? idx) !== id)); 
     }, []);
 
 
@@ -91,7 +99,7 @@ function EcommerceTotal({seleccion}){
             
             <MockApiHusqvarna url={url} enviarDatos={handleEnviarDatos} onError={handleError}  tieneDatos={productos.length > 0}/>
             {error ? (<p className="error">{error}</p>) : (
-                <>
+            <>
             <ListaProductosJardineria productosApi = {productos} agregarCarrito = {agregarCarrito}   />
             
             <Carrito items= {carrito} total={total}  onRemove={quitarDelCarrito} />

@@ -1,6 +1,10 @@
 import React from 'react';
+import {useParams, useLocation} from 'react-router-dom';
 
 export default function CarritoCompras({ items, total, onRemove }) { ///ver donde se llama carrito de compras para que cumplacon los tres items
+   
+   
+   
     return (
     <aside className="Carrito">  {/*por que asside*/}
     <h3>Carrito</h3>
