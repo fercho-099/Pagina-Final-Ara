@@ -47,42 +47,13 @@ function resolveUrl(selection) {
 }
 
 
-function EcommerceTotal({seleccion}){
+function EcommerceTotal({ seleccion, carrito, agregarCarrito, quitarDelCarrito }){
 
-    const [productos,setProductos] = useState([]);
-    
-    const [carrito, setCarrito] = useState(() => {
-        const guardado = localStorage.getItem("carrito_maquinaria");
-        return guardado ? JSON.parse(guardado) : [];
-    });
-
-    useEffect(()=>{
-        localStorage.setItem("carrito_maquinaria", JSON.stringify(carrito));
-    }, [carrito]);
+    const [productos,setProductos] = useState([]);  
     
     const [error, setError] = useState(null);
 
-    const url= useMemo(() => resolveUrl(seleccion), [seleccion]);
-
-    const agregarCarrito = useCallback((producto) => {
-        setCarrito(carrito =>[...carrito, producto]);
-    }, []);
-
-    
-    const quitarDelCarrito = useCallback((id) => {
-    setCarrito((prev) => prev.filter((p, idx) => (p.id ?? idx) !== id)); 
-    }, []);
-
-
-    
-    const total = useMemo(
-    () =>
-    carrito.reduce((acc, p) => {
-        const precio = Number(p.Precio ?? p.precio ?? 0);
-        return acc + (isNaN(precio) ? 0 : precio);
-    }, 0),
-    [carrito]
-    );
+    const url= useMemo(() => resolveUrl(seleccion), [seleccion]);  
 
     const handleEnviarDatos = useCallback((datos) =>{
         setProductos(datos || []);
@@ -102,7 +73,7 @@ function EcommerceTotal({seleccion}){
             <>
             <ListaProductosJardineria productosApi = {productos} agregarCarrito = {agregarCarrito}   />
             
-            <Carrito items= {carrito} total={total}  onRemove={quitarDelCarrito} />
+            <Carrito items= {carrito}  onRemove={quitarDelCarrito} />
             </>
         )}
     </section>
