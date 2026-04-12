@@ -1,7 +1,8 @@
-import React, {useState} from 'react';   
+import {useState} from 'react';
+import CarritoCompras from './CarritoCompras';
 import '../styles/style.css';
 
-function Nav({onSelect, active}) {   
+function Nav({onSelect, active, carrito, onRemove}) {   
     
 
     const [activeDropdown, setActiveDropdown] = useState(null);
@@ -14,6 +15,10 @@ function Nav({onSelect, active}) {
         onSelect(menu, item);
         setActiveDropdown(null);
     };
+
+    const [mostrarCarrito, setMostrarCarrito] = useState(false);
+
+    const cantidadTotal = carrito.reduce((acc, item) => acc + (item.cantidad || 1), 0);
 
     return (   
         <nav className="Nav-container">   
@@ -83,6 +88,17 @@ function Nav({onSelect, active}) {
 
                     </div>
                 </div> 
+
+                <div className="Cart-Wrapper" style={{ position: 'relative' }}>
+                    <button className="Cart-Icon-Btn" onClick={() => setMostrarCarrito(!mostrarCarrito)}>
+                        <span className="Badge">{cantidadTotal}</span>
+                    </button>
+                    {mostrarCarrito && (
+                    <div className="Cart-Dropdown">
+                        <CarritoCompras items={carrito} onRemove={onRemove} />
+                    </div>
+                    )}
+                </div>
         </nav>   
     );  
 }   

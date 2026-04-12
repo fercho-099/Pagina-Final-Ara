@@ -11,9 +11,9 @@ export default function ValorYContacto(){
 return(
 
     <>
-    <Header />    
+    
     <Outlet />
-    <Footer />
+    
     </>
 );
 

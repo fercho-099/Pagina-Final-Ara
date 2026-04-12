@@ -1,4 +1,10 @@
 /* ------- ListaProductosJardineria   tarjeta ------- */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
 .ComprarOvender {
     
     background-color: #f5f4f4;
@@ -19,6 +25,18 @@
 .interes-boton:hover{
 background-color: #ef8009ff;
 color: white;
+}
+
+/*-------- Header ------*/
+
+.Header-Main{
+  position: relative;
+  width: 100%;
+  background-color: #f79620;
+  color: #000000;
+  padding: 25px 0;
+  text-align: center; /*centra los item del boton inicio*/
+  
 }
 
 /* ------- NAV ------- */

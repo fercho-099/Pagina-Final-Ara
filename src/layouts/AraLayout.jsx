@@ -46,8 +46,8 @@ export default function AraLayout(){
 
     return(
         <>
-        <Header carrito={carrito} onRemove={quitarDelCarrito}/>
-        <Nav onSelect={handleSelect} active={seleccion}/>
+        <Header />
+        <Nav onSelect={handleSelect} active={seleccion} carrito={carrito} onRemove={quitarDelCarrito}/>
         <Main />
         
         <EcommerceTotal seleccion = {seleccion} carrito={carrito} agregarCarrito={agregarCarrito}/>

@@ -2,7 +2,7 @@ import React from 'react';
 import {useState} from 'react';
 import CarritoCompras from './CarritoCompras';
 
-function Header({carrito, onRemove}) {  
+{/*function Header({carrito, onRemove}) {  
     
     const [mostrarCarrito, setMostrarCarrito] = useState(false);
 
@@ -25,4 +25,12 @@ function Header({carrito, onRemove}) {
 
     );
 
-} export default Header;  
+} export default Header;  */}
+
+function Header(){
+    return(
+        <header className = "Header-Main">
+            <div className="Logo"> Ara Maquinarias</div>
+        </header>
+    )
+} export default Header;

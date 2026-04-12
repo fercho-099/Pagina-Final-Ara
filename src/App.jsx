@@ -16,14 +16,18 @@ return (
     <Routes>     
                 
         
-        <Route path="/" element={<AraLayout />}>
+        <Route path="/" element={<AraLayout />} >
+
             <Route index element={<GaleriaIntereses />} />
+        
+            <Route path="SobreNosotros" element={<ValorYContacto />}>
+                <Route index element={<QuienesSomos />} />
+                <Route path="QuienesSomos" element={<QuienesSomos /> }  />
+                <Route path="contacto" element={<Contacto />} />
+            </Route>
+
         </Route>
 
-        <Route path="/SobreNosotros" element={<ValorYContacto />}>
-            <Route path="QuienesSomos" element={<QuienesSomos />} />
-            <Route path="contacto" element={<Contacto />} />
-        </Route>
         
         <Route path="*" element={<Navigate to="/" replace />} />
         
